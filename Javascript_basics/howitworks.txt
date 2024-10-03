@@ -1,0 +1,9 @@
+Javascipt execution context
+1.{} global execution context
+2. Function execution context
+3.eval        ""        ""
+
+
+Javascipt runs in wo phases
+1.memory creation phase/(creation phase)
+2.execution phase
