@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+</head>
+<body style="background-color: #414141; color: white;">
+    <h1>Shashank Venkatesh Inamdar</h1>
+    <button id="stop">STOP</button>
+    <button id="start">START</button>
+    
+</body>
+<script>
+    const sayDate=function(str){
+        //console.log(str,"anant",Date.now());
+        
+    }
+    const interval=setInterval(sayDate,1000,"hii")
+
+    // clearInterval(interval)
+
+    document.querySelector('#start').addEventListener('click',function(){
+        setInterval(function(){
+            console.log("anant");
+            
+        },1000)
+    })
+
+    // const id=setInterval(function(){
+    //         console.log("anant");
+            
+    //     },1000)
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            
+        clearInterval(setInterval(function(){
+            console.log("anant");
+            
+        },1000))
+
+        })
+   
+</script>
+</html>

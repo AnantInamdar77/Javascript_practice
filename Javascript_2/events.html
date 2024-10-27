@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: whitesmoke;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul  id="images">
+            <li><img src="IMG-20200909-WA0601.jpg" alt="Owl" id="avi" width="=200px" height="200px">
+            </li>
+            <li><img src="IMG-20200909-WA0601.jpg" alt="Owl" id="river" width="=200px" height="200px">
+            </li>
+            <li><img src="IMG-20200909-WA0601.jpg" alt="Owl" id="owl" width="=200px" height="200px">
+            </li>
+            <li><img src="IMG-20200909-WA0601.jpg" alt="Owl" id="spect" width="=200px" height="200px">
+            </li>
+            <li><img src="IMG-20200909-WA0601.jpg" alt="Owl" id="b&w" width="=200px" height="200px">
+            </li>
+            <li><a id="google" style="color: aliceblue;" href="https://www.google.com">GOOGLE</a></li>
+
+
+        </ul>
+
+    </div>
+</body>
+
+<script>
+
+// Events are Runned sequential in  JS
+
+    // document.getElementById('owl').onclick=function(){
+    //     alert("owl licked")
+    // }
+
+    //attachEvent()
+    //jQuery- on
+
+
+
+// study these topics:-
+    //type, timestamp, defaultPrevented 
+    // target, toElement , srcElement ,  currentTarget,
+    // clientX, clientY,screenX ,screenY
+    // altkey,ctrlkey , shiftkey, keycode
+
+
+    //best approach
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("cliked insinde ul");
+    //     },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl cliked ");
+    //     e.stopPropagation()        // the event will not bubble and prpogates to top element using this
+    //     },false)
+
+    //both above two fuctn when we clicked on owlthe owl id's is exicuted first.,it's called (bubbling) bottom-top
+    // if we make third parameter true(capturing Mood) it will go from top-bottom   (USECASE DEPENDS)
+
+
+        document.getElementById('google').addEventListener('click',function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            console.log("google clicked");
+            
+
+        },false)
+
+
+    
+    
+    
+    
+        // if clicked on image it should disappear
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+
+        if (e.target.tagName==='IMG') {
+            console.log(e.target.id);
+            
+            let removeIt=e.target.parentNode
+        removeIt.remove()
+}
+        
+        // removeIt.parentNode.removeChild(removeIt)
+        
+        
+    },false/*event propogation*/) 
+</script>
+</html>

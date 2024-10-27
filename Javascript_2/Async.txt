@@ -1,0 +1,11 @@
+1.Javascript is a Synchronous
+1.Javascript is a Single Threded (default Javascript)
+
+Blocking code (blocks the flow of the program)-Read File Sync
+
+Non-Blocking code (does't block exicution)- Read File Async 
+
+
+
+EXAMPLE:set time out
+

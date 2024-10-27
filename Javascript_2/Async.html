@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+</head>
+<body style="background-color: #414141; color: white;">
+    <h1>Anant Venkatesh Inamdar</h1>
+    <button id="stop">STOP</button>
+    
+</body>
+<script>
+    const name=function(){
+        console.log("ANANT");
+        
+    }
+    
+    
+    
+    const changeName=function(){
+        document.querySelector('h1').innerHTML="JS Series"
+    }
+    
+    
+    
+    const changename=setTimeout (changeName,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changename)
+        console.log("STOPEED");
+        
+    })
+
+</script>
+</html>
