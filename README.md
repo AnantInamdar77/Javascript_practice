@@ -15,9 +15,9 @@ Welcome to my JavaScript practice repository! Here, I’ll share what I’ve lea
 - Basic Quiz App
 
 ## Goals
-- Understand JavaScript fundamentals
+- Understanding JavaScript fundamentals
 - Build small projects
-- Improve coding skills
+- Improve my coding  skills
 
 Feel free to explore my code and learn with me!
 
