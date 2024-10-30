@@ -12,6 +12,8 @@ Welcome to my JavaScript practice repository! Here, I’ll share what I’ve lea
 ## To -Do-Projects
 - Simple Calculator
 - To-Do List
+- BMI calculator
+- Weather app
 - Basic Quiz App
 
 ## Goals
