@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(172, 164, 211)
+    color: white;
+}
+.button{
+    width: 66px;
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    background-color: rgb(16, 11, 22);
+    color: white;
+}
+.row{
+    margin:7px 0 ;
+}
+.row input{
+    font-size: 19px;
+    margin: 0;
+    padding: 10px 0px;
+    border:2px solid black;
+    border-radius: 12px;
+
+
+}
+.operation{
+    background-color: rgb(217, 145, 0);
+}
